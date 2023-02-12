@@ -1,0 +1,14 @@
+marquee{
+    width: 80%;
+    height: 100px;
+}
+
+.texto{
+    width: 200px; height: 50px; white-space: nowrap;
+overflow: hidden;
+overflow-x:-webkit-marquee;
+-webkit-marquee-direction: forwards;
+-webkit-marquee-style: scroll;
+-webkit-marquee-speed: normal;
+-webkit-marquee-increment: small;
+}

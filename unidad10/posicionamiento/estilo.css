@@ -1,0 +1,42 @@
+.img1 {
+    margin-left: 1vh;
+}
+.img2 {
+    margin-left: 15vh;
+}
+.img3 {
+    margin-left: 30vh;
+}
+.img4 {
+    margin-left: 45vh;
+}
+.img5 {
+    margin-left: 60vh;
+}
+
+label{
+    color: white;
+}
+
+.label1 {
+    margin-left: 15vh;
+}
+.label2 {
+    margin-left: 30vh;
+}
+.label3 {
+    margin-left: 45vh;
+}
+.label4 {
+    margin-left: 60vh;
+}
+
+
+
+img{
+    position: absolute;
+}
+
+label{
+    position: absolute;
+}

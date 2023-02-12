@@ -1,0 +1,19 @@
+#imagen {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes myfirst {
+  0%   {left: 0px; top: 0px;}
+  40%  {left: 600px; top: 0px; transform :scaleX(1);}
+  50%  {left: 600px; top: 0px; transform :scaleX(-1);}
+  90%  {left: 0px; top: 0px; transform :scaleX(-1);}
+  100%  {left: 0px; top: 0px; transform :scaleX(1);}
+}
+
+@keyframes volver {
+  0%   {left: 0px; top: 0px;}
+  100%  {left: 0px; top: 0px;}
+}

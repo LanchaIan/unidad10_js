@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #train {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      animation-direction: alternate-reverse;
+    }
+
+    @keyframes myfirst {
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 200px; top: 0px;}
+    50%  {left: 200px; top: 200px;}
+    75%  {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+  }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000){
+          clearInterval(timer);
+          train.style.transform = "scaleX(-1)";
+          train.style.animation = "myfirst 5s 2";
+        } 
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>
